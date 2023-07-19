@@ -235,6 +235,42 @@ nav {
     height: 80px;
   }
 }
+
+/* genre section */
+.genre {
+  max-width: 1920px;
+  display: grid;
+  grid-template-columns: repeat(5, 200px);
+  grid-template-rows: repeat(2, 60px);
+  /* gap: 20px; */
+  grid-row-gap: 50px;
+  grid-column-gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.genre p {
+  color: #0b0223;
+  font-weight: 600;
+}
+.item {
+  display: flex;
+  width: 200px;
+  height: 80px;
+  gap: 10px;
+  border-radius: 50px;
+  background: #fff;
+
+  /* padding: 25px 20px; */
+  align-items: center;
+  justify-content: space-evenly;
+}
+.item:hover {
+  border: 1px solid #ff42a5;
+}
+.text-hover:hover {
+  color: #ff42a5;
+}
+
 @media screen and (min-width: 576px) and (max-width: 992px) {
   .banner,
   .card,
