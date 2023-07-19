@@ -89,6 +89,8 @@ nav {
       rgba(243, 237, 255, 0.03) 0%,
       rgba(249, 232, 242, 0.013) 100%
     );
+  background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
   width: 901px;
   height: auto;
