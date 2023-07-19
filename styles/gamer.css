@@ -1,0 +1,249 @@
+/* shared styles */
+* {
+  font-family: "Inconsolata", monospace;
+  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Space Mono", monospace;
+  font-family: "Work Sans", sans-serif;
+}
+.text-deco {
+  color: #3c354f;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+.btn-primary {
+  padding: 20px 40px;
+  border-radius: 48px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+}
+
+/* header styles */
+/* nav-styles */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.nav-start a,
+.nav-end a {
+  text-decoration: none;
+}
+.head-span {
+  color: #ff42a5;
+}
+.nav-start {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.heading-style {
+  color: #0b0223;
+  font-size: 45px;
+  font-weight: 700;
+}
+.nav-img {
+  width: 86.041px;
+  height: 40px;
+}
+.nav-end {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.nav-end > div a {
+  margin-left: 20px;
+}
+
+.follow {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5px;
+  align-items: center;
+  width: 262px;
+  height: 40px;
+  border-radius: 8px;
+  background: rgba(11, 2, 35, 0.1);
+  border: none;
+}
+/* banner section styles */
+.banner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 120px;
+  max-width: 1920px;
+}
+.banner-container {
+  background-image: url("../images/background.png"),
+    linear-gradient(
+      223deg,
+      rgba(243, 237, 255, 0.03) 0%,
+      rgba(249, 232, 242, 0.013) 100%
+    );
+  background-position: center;
+  width: 901px;
+  height: auto;
+  padding: 150px;
+}
+.banner-img {
+  width: auto;
+}
+.ban-text {
+  color: #0b0223;
+  /* text-align: center; */
+  font-size: 48px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.banner-span {
+  /* text-align: center; */
+  font-size: 95px;
+  font-weight: 800;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.ban-desc {
+  color: #534c64;
+
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: lowercase;
+}
+.bg1 {
+  background-color: #ff42a5;
+  margin-top: 25px;
+}
+.bg2 {
+  background-color: #4ec5f7;
+}
+
+/* funny video section */
+.funny-text {
+  color: #0b0223;
+  text-align: center;
+
+  font-size: 48px;
+
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.funny-span {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.funny-desc {
+  color: #534c64;
+  text-align: center;
+
+  font-size: 18px;
+  margin-bottom: 45px;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+/* play instant section styles */
+.play {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.play-text {
+  font-size: 48px;
+
+  font-weight: 700;
+  line-height: 60px; /* 125% */
+}
+.play-span {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.play-img {
+  margin-top: 120px;
+}
+.play-img img {
+  height: 90%;
+  margin-left: 200px;
+}
+.play-img2 img {
+  position: relative;
+  width: 300px;
+  height: 360px;
+  bottom: 280px;
+  right: 140px;
+}
+/* .hide {
+  display: none;
+} */
+@media screen and (max-width: 576px) {
+  nav,
+  .nav-end,
+  .banner,
+  .card,
+  .play {
+    flex-direction: column;
+  }
+  .nav-end > div {
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .banner-container {
+    margin: 10px;
+    padding: 10px;
+
+    width: auto;
+  }
+  .banner-img img {
+    width: 100%;
+    height: auto;
+  }
+  .play-img {
+    width: 40%;
+  }
+  .play-img img {
+    margin: 0;
+    width: 120%;
+    height: 150%;
+  }
+  .play-img2 img {
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+    height: 80px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .banner,
+  .card,
+  .play {
+    flex-direction: column;
+  }
+  .banner-container {
+    margin: 10px;
+    padding: 10px;
+    width: 80%;
+  }
+}
